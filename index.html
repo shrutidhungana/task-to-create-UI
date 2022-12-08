@@ -7,14 +7,15 @@
 
     <title>Simple UI</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   </head>
   <body>
-    <header>
-      <img src="assets/images/header.png" alt="logo" width="100px" height="100px" />
+    <header class = "header">
+      <img src="assets/images/header.png" alt="logo" />
       <h1>Dine and Learn</h1>
-
-      <nav>
+    </header>
+      <nav class = "nav">
         <ul>
           <li>
             <a href="#">Home</a>
@@ -26,66 +27,143 @@
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="recipe">Recipe</a>
+            <a href="#recipe">Recipe</a>
           </li>
         </ul>
       </nav>
-    </header>
+    
     <main>
       <article>
+        <div class="container">
         <h2>Welcome to Dine and Learn</h2>
         <p>
           This is just a fake restaurant website where we can know about it's
           menu as well as learn recipe about different dishes through it.
         </p>
         <p>So, don't waste time and start exploring the website.</p>
+        <p>Here you can find all the exciting features of our website template.</p>
+      </div>
         <section>
           <div id="menu">
-              <div>
-            <p>This place is for menu of different items.</p>
-            <h3>Chicken Momo</h3>
-            <img src="assets/images/momo.jpeg" alt="momo" width = "150px" height = "150px">
-            <p>
-              <span>Chicken Momo</span> though <em>very</em> common our one is
-              the special one.
-            </p>
-            <p>
-              <strong>Rs.190</strong>
-            </p>
+             
+                <div class = "menu-para">
+            <p class = "menu-paragraph">Grab our exciting items.</p>
+            <p class = "menu-p">Hover on the card to order or review them. <br> We have many exciting offers for certain time as well. </p>
+            </div>
+            <div class = "menu">
+              <div class = "card">
+                <div class="imgBx">
+            <img src="assets/images/momo.jpeg" alt="momo">
           </div>
-          <div>
-            <h3>Delicious Pizza</h3>
-            <img src="assets/images/pizza.jpeg" alt="pizza" width = "200px">
-            <p>
-              <span>Delicious Pizza </span>is <em>most</em>
-              special item in our list.
-            </p>
-            <p>
-              <strong>Rs.490</strong>
-            </p>
+             <div class="content">
+               <div class="details">
+            <h2>Chicken Momo
+              <br>
+              <span>Price: Rs 190</span>
+            </h2>
+            <div class="data">
+              <h3>20%
+                <span>Discount</span>
+              </h3><br>
+              
+              <h3>Limited
+                <span>Offer</span>
+              </h3><br>
+                
+            </div>
+            <div class="actionBtn">
+              <button>Order</button>
+              <button>Review</button>
+            </div>
+            
           </div>
-          <div>
-              <h3>French Fries</h3>
-              <img src="assets/images/frenchfries.jpg" alt="frenchfries" width="200px" height="200px">
-              <p>
-              <span>French Fires</span> is another <em>exciting</em> item in our menu.
-            </p>
-            <p>
-                <strong>Rs 120</strong>
-            </p>
           </div>
-          <div>
-              <h3>Fried Rice</h3>
-              <img src="assets/images/friedrice.jpg" alt="friedrice" width = "200px" height = "200px">
-              <p>
-              <span>Fried Rice</span> is also one of our most <em>interesting</em>display.
-            </p>
-            <p>
-                <strong>Rs 130</strong>
-            </p>
           </div>
-          <a href="#about">Learn More</a>
+          <div class = "card">
+              <div class="imgBx">
+            <img src="assets/images/pizza.jpeg" alt="pizza">
+             </div>
+             <div class="content">
+              <div class="details">
+            <h2>Delicious Pizza
+              <br>
+              <span>Price: Rs 450</span>
+            </h2>
+            <div class="data">
+              <h3>25% 
+                <span>Discount</span>
+              </h3>
+             
+              <br>
+             
+              <h3>Limited
+                <span>Offer</span>
+              </h3><br>
+               
+            </div>
+               <div class="actionBtn">
+            <button>Order</button>
+            <button>Review</button>
+          </div>
+          </div>
+          </div>
+          </div>
+        
+          <div class = "card">
+             <div class="imgBx">
+              <img src="assets/images/frenchfries.jpg" alt="frenchfries">
+             </div>
+             <div class="content">
+              <div class="details">
+              <h2>French Fries
+                <br>
+                <span>Price: Rs 150</span>
+              </h2>
+              <div class="data">
+                <h3>10% <span>Discount</span>
+                </h3><br>
+               
+                <h3>Limited
+                  <span>Offer</span>
+                </h3><br>
+               
+              </div>
+              <div class="actionBtn">
+            <button>Order</button>
+            <button>Review</button>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class = "card">
+             <div class="imgBx">
+              <img src="assets/images/friedrice.jpeg" alt="friedrice">
+            </div>
+            <div class="content">
+              <div class="details">
+              <h2>Fried Rice 
+                <br>
+                <span>Price: Rs 130</span>
+              </h2>
+              <div class="data">
+                <h3>5%
+                  <span>Discount</span>
+                </h3><br>
+               
+                <h3>Limited
+                  <span>Offer</span>
+                </h3><br>
+               
+              </div>
+              <div class="actionBtn">
+            <button>Order</button>
+            <button>Review</button>
+          </div>
+          </div>
         </div>
+          </div>
+        </div>
+      </div>
         </section>
         <section>
             <div id = "about">
@@ -234,37 +312,30 @@
       </div>
       </div>
     </main>
-    <footer>
-        <div>
-            <form>
-            <i class="fa-regular fa-envelope"></i>
-
-            <input type = "email" 
-            placeholder = "Your e-mail"/>
-            <button type = "submit">
-                Subscribe Now!
-                <i class="fa-sharp fa-solid fa-arrow-right"></i>
-            </button>
-            
-        </form>
-        </div>
-            <div>
-                <div>
-                   <figure>
-                       <img src="assets/images/header.png" alt="logo" width= "100px" height = "100px">
-                   </figure> 
-                   <p>Subscribe our YouTube Channel as well to know more about recipe </p>
-                </div>
-                <div>
-                    <h3>Office</h3>
-                    <p>Baneshwor,Kathmandu</p>
-                    <p>Bagmati,Nepal</p>
-                    <p>email@example.com</p>
-                    <h4>+977 0123456789</h4>
-                </div>
-                <div>
-                    <h3>Link</h3>
-                    <ul>
+    <footer class = "footer">
+        <div class = "row">
+         <div class = "col">
+           <img src="assets/images/header.png" alt="logo" class = "logo">
+           <p>Subscribe our YouTube Channel as well to know more about recipe and press the bell icon to get immediate notification of latest videos.</p>
+         </div>
+         <div class="col">
+          <h3>Office
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+          <p>Baneshwor,Kathmandu</p>
+          <p>Bagmati,Nepal</p>
+          <p class ="email-id">email@example.com</p>
+          <h4>+977 0123456789</h4>
+         </div>
+         <div class="col">
+          <h3>Links
+            <div class="underline">
+              <span></span>
+            </div>
+          </h3>
+                    <ul class = "links">
                         <li>
                             <a href="#">Home</a>
                         </li>
@@ -278,20 +349,34 @@
                             <a href="#recipe">Recipe</a>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <i class="fa-brands fa-pinterest"></i>
-                  
-                </div> 
-                <div>
-                &copy; 2022 <span>Shruti Dhungana</span> All Rights Reserved
+         </div>
+         <div class="col">
+           <h3>Newsletter
+            <div class="underline">
+              <span></span>
             </div>
+           </h3>
+          <form class = "subscribe">
+            <i class="fa-regular fa-envelope"></i>
+
+            <input type = "email" 
+            placeholder = "Your e-mail" required/>
+            <button type = "submit">
+                <i class="fa-sharp fa-solid fa-arrow-right"></i>
+            </button>
             
-            </div>
-            
+        </form>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+         <i class="fa-brands fa-pinterest"></i>
+              
+        </div>
+         </div>
+           </div>
+            <hr class ="line">
+            <p class= "copyright">  &copy; 2022 <span class = "author">Shruti Dhungana</span> All Rights Reserved</p>
     </footer>
   </body>
 </html>

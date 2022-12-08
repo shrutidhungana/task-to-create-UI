@@ -1,0 +1,23 @@
+@media(max-width: 700px){
+    .footer{
+        bottom: unset;
+    }
+
+    .col{
+       flex-basis: 82%;
+    }
+
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 82%;
+    }
+    
+    .copyright{
+        text-align: left;
+    }
+
+   .menu{
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+}
