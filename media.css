@@ -21,3 +21,239 @@
    }
 
 }
+
+@media(max-width: 960px){
+
+    
+    .nav .navigation{
+        display: none;
+    }
+
+    .nav .toggle label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.5s;
+        transition-property: color;
+    }
+    
+    .nav .toggle label:hover{
+        color: #fff;
+    }
+
+    label .fa-xmark{
+        display: none;
+    }
+
+    #check:checked ~ .nav .navigation{
+        z-index: 2;
+        position: fixed;
+        background: rgba(114,223,255,0.9);
+        top: 0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ .nav .navigation a{
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+
+    #check:checked ~ .nav label .fa-bars{
+        display: none;
+    }
+
+    #check:checked ~ .nav label .fa-xmark{
+        z-index: 2;
+        display: block;
+        position: fixed;
+
+    }
+
+  label .fa-bars{
+      position: absolute;
+
+  }
+
+ .home .home-content .info h2{
+         font-size: 45px;
+         line-height: 50px;
+
+  }
+  .home .home-content .info h2 span{
+      font-size: 40px;
+      font-weight: 600;
+  }
+  .home .home-content .info p{
+      font-weight: 14px;
+      
+  }
+  
+  .home{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+  @media(max-width: 560px){
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+    .home .home-content .info h2{
+        font-size: 35px;
+        line-height: 40px;
+
+ }
+ .home .home-content .info h2 span{
+     font-size: 30px;
+     font-weight: 600;
+ }
+ .home .home-content .info p{
+     font-weight: 14px;
+     
+ }
+
+ .section .container{
+    width: 60%;
+    display: block;
+    margin: auto;
+    
+}
+
+}
+
+@media (max-width: 768px) {
+    .section .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+       
+    }
+
+    .content{
+        float:none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .image-section{
+        float:none;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .container .title h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .container .article .button{
+        text-align: center;
+    }
+
+    .container .article .button a{
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+
+    .container .social i{
+        font-size: 19px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+
+
+    #recipe h1{
+        position: relative;
+        width: 50%;
+        min-width: 350px;
+        height: auto;
+        margin-top: -10px;
+        padding: 0 0 0 10px;
+        font-family: "Recursive", sans-serif;
+        font-size: 2rem;
+        color: blue;
+        text-align: center;
+    }
+    .recipe p{
+        margin: 50px 100px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        color:/*#1B1212*/#000080	;
+        text-align: left;
+        width: 50%;
+    }
+
+    .ingredients h3, .directions h3{
+        width: 25%;
+        margin: 50px 0 0 50px;
+        padding: 5px 45px;
+        text-align: center;
+        
+    }
+
+    .ingredients ul, .directions ol{
+        width: 100%;
+        height: auto;
+         line-height: 1.2rem;
+
+
+        
+    }
+
+    .ingredients li{
+        margin: 0 0 10px 50px;
+        
+        
+
+    }
+    
+    .directions li{
+        margin: 0 0 10px 50px;
+    }
+
+    .video p, .audio p{
+        margin: 50px 0 0 60px;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color:/*#1B1212*/ rgba(255, 255, 255, 1.00);;
+        text-align: left;
+    }
+
+    .video .video1{
+        width: 200px;
+        height: 200px;
+        margin: 0 150px;
+    }
+
+    .audio .audio1{
+        margin: 20px 150px;
+    }
+
+}
+
+
+

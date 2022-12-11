@@ -6,43 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Simple UI</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Chakma&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Recursive:wght@300;400;500;600;700&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
   </head>
   <body>
+    <div class = "div">
     <header class = "header">
-      <img src="assets/images/header.png" alt="logo" />
+      <a href="#">
+        <img src="assets/images/header.png" alt="logo" />
+      
+      </a>
       <h1>Dine and Learn</h1>
+      
     </header>
-      <nav class = "nav">
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#menu">Menu</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#recipe">Recipe</a>
-          </li>
-        </ul>
-      </nav>
+    <section class = "check">
+    <input type="checkbox" id = "check">
+    <nav class = "nav">
+    
+      <div class = "navigation">
+          <a href="#">Home</a>
+        
+          <a href="#menu">Menu</a>
+        
+        
+          <a href="#about">About</a>
+        
+        
+          <a href="#recipe">Recipe</a>
+        
+      
+    </div>
+        <div class = "toggle">
+          <label for="check">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+        </div>
+       
+      
+      
+    
+   
+    
+    </nav>
+    </section>
+   
+    
+
     
     <main>
       <article>
-        <div class="container">
-        <h2>Welcome to Dine and Learn</h2>
+        <section class = "home">
+        <div class="home-content">
+        <div class="info">
+          
+        <h2> Dine and Learn 
+          <br>
+          <span>Eat and Learn</span>
+        </h2>
         <p>
           This is just a fake restaurant website where we can know about it's
           menu as well as learn recipe about different dishes through it.
+          So, don't waste time and start exploring the website. Here you can find all the exciting features of our website. You can also learn about recipe of your favorite dish through order, video or audio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla dolorum asperiores fugiat dolor veritatis corporis non, quo temporibus assumenda in!
         </p>
-        <p>So, don't waste time and start exploring the website.</p>
-        <p>Here you can find all the exciting features of our website template.</p>
+        <a href="#" class = "info-btn">More Info</a>
       </div>
+      </div>
+      <div class="media-icons">
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+          <i class="fa-brands fa-instagram"></i>
+           </a>
+          </div>
+      </div>
+    </section>
         <section>
           <div id="menu">
              
@@ -167,47 +214,95 @@
         </section>
         <section>
             <div id = "about">
-                <div>
-                <p>Let's include the information about team at our restaurant</p>
-                <ul>
-                    <li> XYZ,CEO</li>
-                    <li>ABC,Manager</li>
-                    <li>Wait,Waiter</li>
-                    <li>Che,Chef</li>
-                </ul>
-            </div>
-            <div>
-               <p><h3>Location:</h3>
-               Kathmandu, Nepal</p>
-               <p>
-                   <h3>Cuisine:</h3>
-                   We serve all types of cuisines.Tell us what you like. We are always there to serve you.
-               </p>
-            </div>
-        </div>
+              <div class="section">
+                <div class="container">
+                  <div class="title">
+                    <h1>About Us</h1>
+                  </div>
+                  <div class="content">
+                     <div class="article">
+                       <h3>Learn Who we are?</h3>
+                       <p>This is just a fictional restaurant website, where you can view different restaurant menu. If you wanna learn recipe about your favourite dish you can even do that. We have put recipes of our dishes in order. If you have some problem reading to it you can watch the video of the dishes constituent with the recipe given. If you don't want watching the video, you can also listen to the audio about it. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sed est eius, error explicabo corrupti maiores nam reprehenderit quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dignissimos reprehenderit aspernatur eius! Quaerat aut nam laborum odit reiciendis. Aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quisquam at minus voluptas fuga eveniet quas totam cum sint natus.
+                      </p>
+                      <div class="button">
+                        <a href="">Read More</a>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="image-section">
+                    <img src="assets/images/chef.jpeg" alt="image">
+                  </div>
+                  <div class="social">
+                    <a href="">
+                      <i class="fa-brands fa-facebook"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <p>Here are some learning about our restaurant policy and it's innovation, which you can always do with the help of following pdf.You can always download it if you feel it's difficult to learn.</p>
+                    <embed src="assets/external/restaurant.pdf" width = "800px" height = "600px">     
+                 </div>
+                 <div>
+                    <p>If you want to know about how much our staffs has completed their task. </p>
+                     Progress: <progress value = "50" max = "100"></progress>
+                </div>
+              
+                </div>
+              </div>
+             </div>
+            
         </section>
         <section>
             <div id = "recipe">
-                <div>
-                    <h3>Different Recipes:</h3>
-                    <p>We have include recipe for our special items in written text form in order along with it's video and audio.So, you can always have a chance to learn it if you want to.</p>
+              <h1>Different Recipes:</h1>
+              <div class = "recipe">
+                <p>We have included recipe for our special items in written text form in order along with it's video and audio.So, you can always have a chance to learn it if you want to.</p>
+              </div>
+                     <div class="recipe-content"> 
+                    
+                  <div class = "title1">
                     <h3>Chicken Momo:</h3>
-                    <ol>
-                        <li>Take some amount of refined wheat flour and make a dough out it to cover it for sometime.</li>
-                        <li>Take some minced chicken and add vegetables such as cabbage,onion, ginger garlic paste,spring onions,dry-onions,corainder and mix them well.</li>
-                        <li>Put some amount of momo-masala,salt,turmeric powder, salt and oil as well as some water to make them juicy.</li>
-                        <li>Take one half of the dough to roll it into a big circle like structureand cut it into small pieces with some round structure.</li>
-                        <li>Take the cut piece, add the mixture and pack it.</li>
-                        <li>Boil some water and put the packed uncooked momo for it to be steamed.</li>
-                        <li>Cook it till 15 minutes and check if it is cooked or not.</li>
-                        <li>The momo is cooked if it isn't sticky.</li>
-                    </ol>
-                </div>
-                <div>
+                  </div>
+                    
+                    <div class ="ingredients">
+                        <h3>Ingredients</h3>
+                     <ul>
+                      <li>1/2kg minced chicken</li>
+                      <li>2 medium size onions, 1 would be okay if it's big</li>
+                      <li>600g refined flour</li>
+                      <li>Some spring onions</li>
+                      <li>Some cloves of ginger and garlic minced</li>
+                      <li>200g cabbage</li>
+                      <li>1/2kg refined wheat flour</li>
+                      <li>Some pinch of corainder</li>
+                      <li>Salt as per taste</li>
+                      <li>1/2 table spoon turmeric powder</li>
+                      <li>Momo-masala</li>
+                      <li>1 table spoon chilly powder</li>
+                      <li>Mustard oil</li>
+                    </ul>
+                   </div>
+                   <div class ="directions">
+                     <h3>Directions</h3>
+                  <ol>
+                      <li>Take some amount of refined wheat flour and make a dough out it to cover it for sometime.</li>
+                      <li>Take some minced chicken and add vegetables such as cabbage,onion, ginger garlic paste,spring onions,corainder and mix them well.</li>
+                      <li>Put some amount of momo-masala,salt,turmeric powder,  and oil as well as some water to make them juicy.</li>
+                      <li>Take one half of the dough to roll it into a big circle like structureand cut it into small pieces with some round structure.</li>
+                      <li>Take the cut piece, add the mixture and pack it.</li>
+                      <li>Boil some water and put the packed uncooked momo for it to be steamed.</li>
+                      <li>Cook it till 15 minutes and check if it is cooked or not.</li>
+                      <li>The momo is cooked if it isn't sticky.</li>
+                  </ol>
+                   </div>
+               
+              
+               
+               <div class= "video">
                     <p>For further understanding you can check out the video below:</p>
                     <video controls
-                    width = "400"
-                    height = "400"
+                     class = "video1"
                     poster="assets/images/Momo.jpg"
                     >
                         <source src = "assets/videos/momo.mp4" type = "video/mp4" />
@@ -215,101 +310,97 @@
                         <p>Your browser doesn't support this video. Here is a <a href="https://www.youtube.com/watch?v=uJlIncioJVI">Here is a youtube link instead.</a></p>
                     </video>
                 </div>
-                <div>
-                    <p>If you don't like watching videos you can listen to the audio instead.</p>
-                    <audio controls>
+                <div class ="audio">
+                    <p>If you don't like watching videos you can listen to the audio instead:</p>
+                    <audio controls
+                         class = "audio1"
+                    >
                         <source src = "assets/audios/momo.mp3" type = "audio/mp3" />
                         <p>Your browser doesn't support this audio. Here is a <a href="https://www.youtube.com/watch?v=uJlIncioJVI">Here is a youtube link instead.</a></p>
                     </audio>
+                  </div>
+                  <aside class = "aside">
+                    <div class = "aside1">
+                  <p>This is little out of context but just wanted to know your favorite icecream flavour.</p>
+                  <form>
+                      <input list = "flavour">
+                      <datalist id = "flavour">
+                          <option value = "Chocolate">
+                          <option value = "Vanilla">
+                          <option value = "Strawberry">
+                          <option value = "Mango">
+                          <option value = "21 Love">
+                          <option value = "Butter  Scotch">         
+                      </datalist>
+                      <button>Submit</button>
+                  </form>
+                 </div>
+                 <div>
+                     <h3>Do you wanna learn about position of chefs?</h3>
+                     <p>Following are the position of some chef roles:</p>
+                     <dl>
+                         <dt>Purchasing Manager</dt>
+                         <dd>The purchasing manager is in charge of buying all of the food for the kitchen.</dd>
+                         <dt>Kitchen Porter</dt>
+                         <dd>This person is in charge of simple but important tasks involved in the basic preparations of the food. </dd>
+                         <dt>Commis Chef</dt>
+                         <dd>A junior chef, also called the commis chef, has recently completed some schooling or training and is beginning to work in the culinary field.</dd>
+                         <dt>Chef de Partie</dt>
+                         <dd> These chefs  cook the food that is being served to customers.</dd>
+                         <dt>Sous Chef</dt>
+                         <dd>The deputy chef, otherwise known as the sous chef, remains second-in-command in the kitchen. </dd>
+                         <dt>Chef de Cuisine</dt>
+                         <dd> Like an executive chef, this person controls all aspects of the kitchen. </dd>
+                         <dt>Executive Chef</dt>
+                         <dd> Their primary role is managing the kitchen and its staff. </dd>
+                     </dl>
+                 </div>
+                 <div>
+                     <p>Let's see some facts about restaurant. </p>
+                     <details open>
+                      <summary>Appetizer</summary>
+                      <p>We eat appetizer before a meal</p>
+                      <img src="assets/images/appetizer.jpeg" alt="appetizer" width = "100px" height = "100px">
+                      </details>
+                      <details>
+                      <summary>Beverage</summary>
+                       <p>Beverage is sometimes used with a straw.</p>
+                       <img src="assets/images/beverage.jpeg" alt="beverage" width = "100px" height = "100px">
+                     </details>
+                     <details>
+                         <summary>Cashier</summary>
+                         <p>A cashier is a person, who takes your money.</p>
+                         <img src="assets/images/cashier.png" alt="cashier" height = "100px" width = "100px">
+                     </details>
+                     <details>
+                         <summary>Vegeterian</summary>
+                         <p>A person who does not eat meat or eggs.</p>
+                         <img src="assets/images/vegeterian.jpeg" alt="vegeterian" height = "100px" width = "100px">
+                     </details>
+                     <details>
+                      <summary>Tray</summary>
+                      <p>A tray is used to put things in it.</p>
+                      <img src="assets/images/tray.jpeg" alt="tray" height = "100px" width = "100px">
+                  </details>
+                
+                <div>
+              <p>This is also something out of context for our website.But we can also take result out if you want. </p>
+                 <form oninput="store.value = parseInt(n1.value)+parseInt(n2.value)"> 
+                     <input type="text" name = "n1" placeholder = "number"> +
+                     <input type="text" name = "n2" placeholder = "number"><br>
+                     The Output is:
+                     <output name = "store"></output>
+                 </form>
+              </div>
+                </aside>
                 </div>
-            </div>
+              </div>
+               
         </section>
       </article>
-      <aside>
-          <div>
-        <p>This is little out of context but just wanted to know your favorite icecream flavour.</p>
-        <form>
-            <input list = "flavour">
-            <datalist id = "flavour">
-                <option value = "Chocolate">
-                <option value = "Vanilla">
-                <option value = "Strawberry">
-                <option value = "Mango">
-                <option value = "21 Love">
-                <option value = "Butter  Scotch">         
-            </datalist>
-            <button>Submit</button>
-        </form>
-       </div>
-       <div>
-           <h3>Do you wanna learn about position of chefs?</h3>
-           <p>Following are the position of some chef roles:</p>
-           <dl>
-               <dt>Purchasing Manager</dt>
-               <dd>The purchasing manager is in charge of buying all of the food for the kitchen. This person keeps track of the food available in the kitchen and the food that needs to be ordered.</dd>
-               <dt>Kitchen Porter</dt>
-               <dd>The kitchen porter usually does not have the same training and experience as the chefs. This person is in charge of simple but important tasks involved in the basic preparations of the food. </dd>
-               <dt>Commis Chef</dt>
-               <dd>A junior chef, also called the commis chef, works with station chefs  to learn about the kitchen environment. This person has recently completed some schooling or training and is beginning to work in the culinary field.</dd>
-               <dt>Chef de Partie</dt>
-               <dd>The station chefs arguably have the critical roles in the kitchen. These chefs  cook the food that is being served to customers. However, there are multiple positions that fall under the station chef title. Each chef is responsible for a different “station,” with different chefs for each food category.</dd>
-               <dt>Sous Chef</dt>
-               <dd>The deputy chef, otherwise known as the sous chef, remains second-in-command in the kitchen. Depending on the restaurant and its management, it is possible to have more than one sous chef. </dd>
-               <dt>Chef de Cuisine</dt>
-               <dd>The head chef remains at the top of the hierarchy in restaurant kitchens without an executive chef. Like an executive chef, this person controls all aspects of the kitchen. </dd>
-               <dt>Executive Chef</dt>
-               <dd>Not every restaurant has an executive chef; that title normally applies only to large chains or restaurants. Generally, an executive chef does very little cooking. Their primary role is managing the kitchen and its staff. This includes overseeing and training personnel, planning menus, managing the culinary budget and sometimes purchasing. </dd>
-           </dl>
-       </div>
-       <div>
-           <p>Let's see some facts about restaurant. </p>
-           <details open>
-            <summary>Appetizer</summary>
-            <p>We eat appetizer before a meal</p>
-            <img src="assets/images/appetizer.jpeg" alt="appetizer" width = "100px" height = "100px">
-            </details>
-            <details>
-            <summary>Beverage</summary>
-             <p>Beverage is sometimes used with a straw.</p>
-             <img src="assets/images/beverage.jpeg" alt="beverage" width = "100px" height = "100px">
-           </details>
-           <details>
-               <summary>Cashier</summary>
-               <p>A cashier is a person, who takes your money.</p>
-               <img src="assets/images/cashier.png" alt="cashier" height = "100px" width = "100px">
-           </details>
-           <details>
-               <summary>Vegeterian</summary>
-               <p>A person who does not eat meat or eggs.</p>
-               <img src="assets/images/vegeterian.jpeg" alt="vegeterian" height = "100px" width = "100px">
-           </details>
-           <details>
-            <summary>Tray</summary>
-            <p>A tray is used to put things in it.</p>
-            <img src="assets/images/tray.jpeg" alt="tray" height = "100px" width = "100px">
-        </details>
-       </div>
-      <div>
-    <p>This is also something out of context for our website.But we can also take result out if you want. </p>
-       <form oninput="store.value = parseInt(n1.value)+parseInt(n2.value)"> 
-           <input type="text" name = "n1" placeholder = "number"> +
-           <input type="text" name = "n2" placeholder = "number"><br>
-           The Output is:
-           <output name = "store"></output>
-       </form>
-    </div>
-      </aside>
-      <div>
-        <p>Here are some learning about our restaurant policy and it's innovation, which you can always do with the help of following pdf.You can always download it if you feel it's difficult to learn.</p>
-        <embed src="assets/external/restaurant.pdf" width = "800px" height = "600px">     
-     </div>
-     <div>
-        <p>If you want to know about how much our staffs has completed their task. </p>
-         Progress: <progress value = "50" max = "100"></progress>
-    </div>
-       <div>
-       <p>Hope you got all the information about our website.</p>
-      </div>
+    
+      
+      
       </div>
     </main>
     <footer class = "footer">
