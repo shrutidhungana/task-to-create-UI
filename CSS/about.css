@@ -1,0 +1,128 @@
+
+/* ||||About us section begins|||| */
+
+#about{
+    background: linear-gradient(to right,  #00093c,#89CFF0);    
+   
+   font-family: 'Poppins', sans-serif
+}
+
+.section{
+    width: 100%;
+}
+
+.section .container{
+    width:80%;
+    display:block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.container .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container .title h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #88941e
+}
+
+.container .title h1::after{
+    content:"";
+    height: 5px;
+    width: 100px;
+    background-color:#c4d156;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+ .content{
+    float: left;
+}
+
+.content .article h3{
+    color: #a3a3a3;
+    font-size: 17px;
+    
+}
+
+.content .article p{
+    margin: 20px 150px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color:#E9DCC9;
+    text-align: justify;
+
+   
+}
+
+/* ||||Restaurant Policy Section */
+
+.content .paragraph{
+    float: left;
+}
+
+.content .paragraph p{
+   margin: 20px 150px 0;
+   font-size: 16px;
+   line-height: 1.5;
+   color:#E9DCC9;
+   text-align: justify;
+}
+
+.content .paragraph .embed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 250px 20px;
+    width: 500px;
+    height: 500px;
+}
+
+/* |||Restaurant Policy section ends||| */
+
+
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+
+.container .social{
+   width: 100%;
+   clear: both;
+   margin-top: 50px;
+   text-align: center;
+   display: inline-block;
+}
+
+.container .social i{
+  color: #fff;
+  font-size: 22px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  line-height: 45px;
+  text-align: center;
+  background-color: #f28f92;
+  margin: 0px 5px;
+  transition: 1s ease;
+  transition-property: background-color;
+}
+
+.container .social i:hover{
+color: #fff;
+background-color: #88941e;
+transform: rotate(360deg);
+}
+
+/* |||About Section ends||| */

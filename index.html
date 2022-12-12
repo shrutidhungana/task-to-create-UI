@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Simple UI</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/recipe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -224,14 +228,22 @@
                        <h3>Learn Who we are?</h3>
                        <p>This is just a fictional restaurant website, where you can view different restaurant menu. If you wanna learn recipe about your favourite dish you can even do that. We have put recipes of our dishes in order. If you have some problem reading to it you can watch the video of the dishes constituent with the recipe given. If you don't want watching the video, you can also listen to the audio about it. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sed est eius, error explicabo corrupti maiores nam reprehenderit quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dignissimos reprehenderit aspernatur eius! Quaerat aut nam laborum odit reiciendis. Aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quisquam at minus voluptas fuga eveniet quas totam cum sint natus.
                       </p>
-                      <div class="button">
-                        <a href="">Read More</a>
+                      <div class="paragraph">
+                        <p>Learn about our restaurant policy through pdf below which you can always download.</p>
+                        <embed src="assets/external/restaurant.pdf" 
+                        class = "embed"
+                        >
                       </div>
+                        <div class="image-section">
+                          <img src="assets/images/chef.jpeg" alt="image">
+                        </div>
+                     
+                     
                      </div>
                   </div>
-                  <div class="image-section">
-                    <img src="assets/images/chef.jpeg" alt="image">
-                  </div>
+                 
+             
+                 
                   <div class="social">
                     <a href="">
                       <i class="fa-brands fa-facebook"></i>
@@ -239,11 +251,8 @@
                       <i class="fa-brands fa-instagram"></i>
                     </a>
                   </div>
-                  <div>
-                    <p>Here are some learning about our restaurant policy and it's innovation, which you can always do with the help of following pdf.You can always download it if you feel it's difficult to learn.</p>
-                    <embed src="assets/external/restaurant.pdf" width = "800px" height = "600px">     
-                 </div>
-                 <div>
+                  
+                 <div class = "Progress">
                     <p>If you want to know about how much our staffs has completed their task. </p>
                      Progress: <progress value = "50" max = "100"></progress>
                 </div>
@@ -256,7 +265,7 @@
         <section>
             <div id = "recipe">
               <h1>Different Recipes:</h1>
-              <div class = "recipe">
+             <div class = "recipe">
                 <p>We have included recipe for our special items in written text form in order along with it's video and audio.So, you can always have a chance to learn it if you want to.</p>
               </div>
                      <div class="recipe-content"> 
@@ -319,42 +328,28 @@
                         <p>Your browser doesn't support this audio. Here is a <a href="https://www.youtube.com/watch?v=uJlIncioJVI">Here is a youtube link instead.</a></p>
                     </audio>
                   </div>
+                  
+                   
+                   
+                  
+             
                   <aside class = "aside">
                     <div class = "aside1">
-                  <p>This is little out of context but just wanted to know your favorite icecream flavour.</p>
+                  <p>This is little out of context but just wanted to know your favorite dish.</p>
                   <form>
-                      <input list = "flavour">
-                      <datalist id = "flavour">
-                          <option value = "Chocolate">
-                          <option value = "Vanilla">
-                          <option value = "Strawberry">
-                          <option value = "Mango">
-                          <option value = "21 Love">
-                          <option value = "Butter  Scotch">         
+                      <input list = "dish">
+                      <datalist id = "dish">
+                          <option value = "Pizza">
+                          <option value = "Mo:Mo">
+                          <option value = "Burger">
+                          <option value = "Sizzler">
+                          <option value = "Chowmein">
+                                 
                       </datalist>
                       <button>Submit</button>
                   </form>
                  </div>
-                 <div>
-                     <h3>Do you wanna learn about position of chefs?</h3>
-                     <p>Following are the position of some chef roles:</p>
-                     <dl>
-                         <dt>Purchasing Manager</dt>
-                         <dd>The purchasing manager is in charge of buying all of the food for the kitchen.</dd>
-                         <dt>Kitchen Porter</dt>
-                         <dd>This person is in charge of simple but important tasks involved in the basic preparations of the food. </dd>
-                         <dt>Commis Chef</dt>
-                         <dd>A junior chef, also called the commis chef, has recently completed some schooling or training and is beginning to work in the culinary field.</dd>
-                         <dt>Chef de Partie</dt>
-                         <dd> These chefs  cook the food that is being served to customers.</dd>
-                         <dt>Sous Chef</dt>
-                         <dd>The deputy chef, otherwise known as the sous chef, remains second-in-command in the kitchen. </dd>
-                         <dt>Chef de Cuisine</dt>
-                         <dd> Like an executive chef, this person controls all aspects of the kitchen. </dd>
-                         <dt>Executive Chef</dt>
-                         <dd> Their primary role is managing the kitchen and its staff. </dd>
-                     </dl>
-                 </div>
+                
                  <div>
                      <p>Let's see some facts about restaurant. </p>
                      <details open>
@@ -382,7 +377,7 @@
                       <p>A tray is used to put things in it.</p>
                       <img src="assets/images/tray.jpeg" alt="tray" height = "100px" width = "100px">
                   </details>
-                
+                 </div>
                 <div>
               <p>This is also something out of context for our website.But we can also take result out if you want. </p>
                  <form oninput="store.value = parseInt(n1.value)+parseInt(n2.value)"> 
@@ -393,6 +388,7 @@
                  </form>
               </div>
                 </aside>
+            
                 </div>
               </div>
                

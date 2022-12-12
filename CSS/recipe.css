@@ -1,0 +1,172 @@
+/* Recipe Section starts */
+#recipe{
+
+    width: 100%;
+     height: auto; 
+      background-image: url("../assets/images/recipe.jpg");
+      background-position: center;  
+       background-size: cover; 
+     
+    
+}
+
+#recipe h1{
+    position: relative;
+    width: 80%;
+    min-width: 950px;
+    height: auto;
+    margin-top: -10px;
+    padding: 0 0 0 30px;
+    font-family: "Recursive", sans-serif;
+    font-size: 4rem;
+    color: blue;
+    text-align: center;
+    
+
+
+}
+
+.recipe{
+    width: 90%;
+    height: 100%;
+    
+}
+
+.recipe-content{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    /* min-height: 100%; */
+    margin: 20px auto 20px auto;
+    padding: 40px 30px 50px 20px;
+   
+    background: linear-gradient(to right,  #00093c,#89CFF0);   
+}
+
+
+
+
+
+
+
+
+.recipe p{
+    margin: 50px 150px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color:/*#1B1212*/#000080	;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.recipe-info{
+     position: relative;
+     width: 60%;
+     height: auto;
+     margin: 0;
+     padding: 0;
+     border: 1px solid white;
+     
+}
+
+
+
+.title1 h3{
+   text-align: center;
+    color: rgba(255,255,255,1.00);
+}
+
+.ingredients{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.ingredients h3, .directions h3{
+    position: relative;
+    width: 20%;
+    height: 1.6rem;
+    margin: 50px 0 0 150px;
+    padding: 0;
+    font-family: "Recursive", "Poppins", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: rgba(204,114,11,1.00);
+    color: rgba(255,255,255,1.00);
+    border-radius: 8rem;
+}
+
+.ingredients ul, .directions ol{
+    width: 70%;
+    height: auto;
+    color: rgba(255, 255, 255, 1.00);
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-top: 50px;
+}
+
+.ingredients li{
+    margin: 0 0 10px 450px;
+    list-style-type: square;
+}
+
+.directions li{
+    margin: 0 0 10px 450px;
+}
+
+
+
+.video p, .audio p{
+    margin: 50px 0 0 350px;
+    font-size: 2rem;
+    line-height: 1.5;
+    color:/*#1B1212*/ rgba(255, 255, 255, 1.00);;
+    text-align: justify;
+}
+
+.video .video1{
+    width: 600px;
+    height: 600px;
+    margin: 0 400px;
+}
+
+.audio .audio1{
+    margin: 20px 400px 50px;
+}
+
+.aside{
+    width: 50%;
+    height: 100vh;
+    
+    
+    
+}
+
+.sidebar{
+    width: 250px;
+    height: 100%;
+    background-color:orange;
+    /* margin: -950px 50px 0; */
+    padding:  35px 20px 0px ;
+    
+}
+
+.toggle-icon div{
+    background: #cfcfc4;
+    width: 100%;
+    height: 3px;
+}
+
+.toggle-icon{
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    width: 22px;
+    height: 22px;
+    z-index: 9999;
+    cursor:pointer;
+    transition: all 0.3s;
+    color: white;
+}

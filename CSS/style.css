@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background-color: #FFFAFA;
+    box-sizing:border-box;
+
+}
+/* ||||Background Image for whole Home Section||||| */
+.div{
+    background: url("../assets/images/background2.jpeg"), #89CFF0 no-repeat;
+    background-size: cover;
+    background-position: center/center;
+    background-blend-mode: multiply;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+/* ||||Header Section Begins||||| */
+
+.header{
+
+/*background: linear-gradient(to right, #00093c,#2d0b00);*/
+ display: flex;
+ justify-content: space-around;
+ height: 80px;
+ width: 100%;
+ margin-bottom: 20px;
+ align-items: center;
+
+}
+
+.header h1{
+    color: white; 
+    text-align: center;
+    
+}
+
+ .header img{ 
+    width: 50px;
+     height: 30px;
+    float: left;
+    cursor: pointer;
+    border: 4px solid #d6cadd;
+    border-radius: 10px;
+    overflow: auto;
+
+}
+/* ||||Header Section Ends||||| */
+/* |||||NavBar Section|||||| */
+
+.nav{
+   width: 89.1%;
+    height: 35px;
+    padding: 0px 100px;
+     /*background-image: linear-gradient(#033747, #012733); */
+   
+
+}
+
+.nav .navigation{
+      /* color: white;   */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav .navigation a{
+    text-decoration: none;
+     color: white; 
+    font-size: 20px;
+    padding: 4px;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.nav .navigation a:hover{
+    background: #ffffff;
+    color: black;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.nav .toggle label{
+    display: none;
+}
+
+.nav .toggle{
+    float: right;
+    margin-right: 3rem;
+}
+
+ #check{
+        z-index: 3;
+        display: none;
+}
+
+/* |||||NavBar section Ends||||| */
+
+/* Footer section starts */
+
+.footer{
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right,  #00093c,#89CFF0);
+    color: #ffffff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+     flex-basis: 20%;
+     padding:  10px;
+}
+
+.col:nth-child(2), .col:nth-child(3){
+     flex-basis: 10%;
+}
+
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ .links{ 
+     list-style-type: none;  
+    
+ } 
+
+.links .li{
+    margin-bottom: 12px;
+}
+
+.links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.subscribe{
+    padding-bottom: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.subscribe .fa-regular{
+        font-size: 18px;
+        margin-right: 10px;
+
+}
+
+.subscribe input{
+    width: 100%;
+    background: transparent;
+    color:#ccc;
+    outline: none;
+
+}
+
+.subscribe button{
+    background:transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.subscribe button .fa-sharp{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fa-brands{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 40px;
+     font-size: 20px;
+     color: #000000;
+     background-color: #ffffff;
+     margin-right: 15px;
+     cursor: pointer;
+}
+
+.line{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+      text-align: center;
+}
+
+.author{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+
+}
+@keyframes moving{
+    0%{
+        left: -20%;
+    }
+    100%{
+        left: 100%;
+    }
+}
