@@ -2,10 +2,11 @@
 #recipe{
 
     width: 100%;
-     height: auto; 
+        height: 280vh;     
       background-image: url("../assets/images/recipe.jpg");
       background-position: center;  
        background-size: cover; 
+       /* margin-bottom: -20px; */
      
     
 }
@@ -14,7 +15,7 @@
     position: relative;
     width: 80%;
     min-width: 950px;
-    height: auto;
+    
     margin-top: -10px;
     padding: 0 0 0 30px;
     font-family: "Recursive", sans-serif;
@@ -28,53 +29,39 @@
 
 .recipe{
     width: 90%;
-    height: 100%;
+    /* height: 100%; */
     
 }
 
 .recipe-content{
     position: relative;
     width: 90%;
-    height: 90%;
-    /* min-height: 100%; */
-    margin: 20px auto 20px auto;
-    padding: 40px 30px 50px 20px;
-   
+       height: 240vh;  
+    margin: 20px auto 0 auto;
+     padding: 40px 30px 60px 20px; 
     background: linear-gradient(to right,  #00093c,#89CFF0);   
 }
-
-
-
-
-
-
 
 
 .recipe p{
     margin: 50px 150px 0;
     font-size: 16px;
     line-height: 1.5;
-    color:/*#1B1212*/#000080	;
+    color:#000080	;
     text-align: justify;
     font-size: 25px;
 }
 
-.recipe-info{
-     position: relative;
-     width: 60%;
-     height: auto;
-     margin: 0;
-     padding: 0;
-     border: 1px solid white;
+
      
-}
 
 
-
-.title1 h3{
+.recipe-title h3{
    text-align: center;
     color: rgba(255,255,255,1.00);
 }
+
+
 
 .ingredients{
     position: relative;
@@ -88,7 +75,7 @@
     position: relative;
     width: 20%;
     height: 1.6rem;
-    margin: 50px 0 0 150px;
+    margin: 50px 0 0 50%;
     padding: 0;
     font-family: "Recursive", "Poppins", sans-serif;
     font-size: 1.2rem;
@@ -108,65 +95,181 @@
 }
 
 .ingredients li{
-    margin: 0 0 10px 450px;
+    margin: 0 0 10px 70%;
     list-style-type: square;
 }
 
 .directions li{
-    margin: 0 0 10px 450px;
+    margin: 0 0 10px 70%;
 }
-
 
 
 .video p, .audio p{
-    margin: 50px 0 0 350px;
+    margin: 100px 0 0 350px;
     font-size: 2rem;
     line-height: 1.5;
-    color:/*#1B1212*/ rgba(255, 255, 255, 1.00);;
+    color: rgba(255, 255, 255, 1.00);;
     text-align: justify;
 }
 
-.video .video1{
+.video .video-content{
     width: 600px;
     height: 600px;
     margin: 0 400px;
 }
 
-.audio .audio1{
-    margin: 20px 400px 50px;
+.audio .audio-content{
+    margin: 100px 400px 50px;
 }
 
 .aside{
-    width: 50%;
-    height: 100vh;
-    
-    
-    
+      background-color: #9185c9;  
+    width: 300px;
+    height: 150vh;
+     margin: 50px 0px 0px -17px; 
+    position: relative;
+    top: -134rem;
+   
 }
 
-.sidebar{
-    width: 250px;
-    height: 100%;
-    background-color:orange;
-    /* margin: -950px 50px 0; */
-    padding:  35px 20px 0px ;
-    
+
+.aside .aside-content{
+    text-align: center; 
+   /* padding: 60px 0 0 20px */
 }
 
-.toggle-icon div{
-    background: #cfcfc4;
-    width: 100%;
-    height: 3px;
-}
-
-.toggle-icon{
+.dish{
+     margin: 20px 20px 30px;  
     position: absolute;
-    top: 22px;
-    left: 15px;
-    width: 22px;
-    height: 22px;
-    z-index: 9999;
-    cursor:pointer;
-    transition: all 0.3s;
+    top: 85%;
+    left: -5%;
+    transform: translateY(-70%);
+}
+
+.dish p{
     color: white;
+    font-size: 1.2rem;
+     margin: 20px 0  
+}
+
+.dishes{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 5px 7px;
+}
+
+.dishes:focus{
+    outline: none;
+}
+
+.dishes::-webkit-calendar-picker-indicator {
+    
+    opacity: 0;
+  }
+
+
+  
+
+
+.aside .details-container{
+      position: absolute;
+        left: 35%;  
+       top: 5%;   
+      transform: translateX(-50%); 
+     width: 200px;
+     
+
+     
+}
+
+.details-container p{
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 40px 0 30px 0 
+
+}
+
+details > summary{
+    list-style-type: none;
+}
+
+details,summary{
+    outline: none;
+    color:rgba(255, 255, 255, 1.00)
+}
+
+summary{
+    font-size: 20px;
+    font-family: "Roberto", sans-serif;
+    background: #eee;
+    color: #111;
+    padding: 10px 20px 8px;
+    position: relative;
+    cursor:pointer;
+}
+
+summary::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #9185c9;
+    right: 10px; 
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+details{
+    margin-bottom: 20px;
+     background: #7475ad; 
+
+}
+
+details .text-section{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+details[open] summary{
+    background-color: #b4a9a9;
+}
+
+details[open] summary::after{
+    content: "";
+    border-top-color: #fff;
+}
+
+.output{
+    position: absolute;
+    top: 65%;
+    left: -0.5%;
+    
+    
+}
+
+.output p{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+
+}
+
+.output input{
+    padding: 7px
+}
+
+.output input:focus{
+    outline: none;
+}
+
+.output .n1-input{
+    margin-bottom: 20px;
+}
+
+.output .output-result{
+    margin-top: 30px;
 }

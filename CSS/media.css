@@ -18,13 +18,19 @@
    .menu{
        display: flex;
        flex-wrap: wrap;
+       padding: 20px 30px
    }
 
+  .card{
+      gap: 30px;
+  }
+
+  
 }
 
 @media(max-width: 960px){
 
-    
+    /* |||For Navigation Bar||| */
     .nav .navigation{
         display: none;
     }
@@ -45,7 +51,7 @@
         display: none;
     }
 
-    #check:checked ~ .nav .navigation{
+     #check:checked ~ .nav .navigation{
         z-index: 2;
         position: fixed;
         background: rgba(114,223,255,0.9);
@@ -57,7 +63,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } 
 
     #check:checked ~ .nav .navigation a{
         font-weight: 700;
@@ -65,6 +71,7 @@
         margin-bottom: 50px;
         letter-spacing: 2px;
     }
+
 
     #check:checked ~ .nav label .fa-bars{
         display: none;
@@ -81,6 +88,7 @@
       position: absolute;
 
   }
+  /* |||For home Content||| */
 
  .home .home-content .info h2{
          font-size: 45px;
@@ -102,9 +110,19 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+
+   .menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px
+   }
+
+   .card{
+      height: 20px;
+   }
 }
 
-  @media(max-width: 560px){
+  @media(max-width: 650px){
 
     .home{
         display: flex;
@@ -126,11 +144,46 @@
      font-weight: 14px;
      
  }
+ label .fa-bars{
+     position: absolute;
+     right: 10px
+ }
+
+label .fa-xmark{
+    position: absolute;
+    right: 10px;
+}
+
+.menu-para .menu-paragraph {
+    font-size: 16px;
+    padding: 5px 7px;
+      
+}
+
+.menu-para .menu-p{
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+
+
+
 
  .section .container{
     width: 60%;
     display: block;
     margin: auto;
+    
+}
+
+.section .about-paragraph{
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+.embed{
     
 }
 
@@ -165,6 +218,8 @@
         margin: auto;
     }
 
+    
+
     .container .title h1{
         text-align: center;
         font-size: 30px;
@@ -185,6 +240,17 @@
         width: 35px;
         line-height: 35px;
     }
+
+    .section .about-paragraph{
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+   .embed{
+       margin: -250px
+   }
+    
 
 
     #recipe h1{
@@ -244,13 +310,13 @@
         text-align: left;
     }
 
-    .video .video1{
+    .video .video-content{
         width: 200px;
         height: 200px;
         margin: 0 150px;
     }
 
-    .audio .audio1{
+    .audio .audio-content{
         margin: 20px 150px;
     }
 

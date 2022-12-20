@@ -23,9 +23,11 @@
     <header class = "header">
       <a href="#">
         <img src="assets/images/header.png" alt="logo" />
-      
+        
       </a>
-      <h1>Dine and Learn</h1>
+      <a href="#"><h1>Dine and Learn</h1></a>
+      
+      
       
     </header>
     <section class = "check">
@@ -228,7 +230,7 @@
                        <h3>Learn Who we are?</h3>
                        <p>This is just a fictional restaurant website, where you can view different restaurant menu. If you wanna learn recipe about your favourite dish you can even do that. We have put recipes of our dishes in order. If you have some problem reading to it you can watch the video of the dishes constituent with the recipe given. If you don't want watching the video, you can also listen to the audio about it. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sed est eius, error explicabo corrupti maiores nam reprehenderit quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dignissimos reprehenderit aspernatur eius! Quaerat aut nam laborum odit reiciendis. Aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quisquam at minus voluptas fuga eveniet quas totam cum sint natus.
                       </p>
-                      <div class="paragraph">
+                      <div class="about-paragraph">
                         <p>Learn about our restaurant policy through pdf below which you can always download.</p>
                         <embed src="assets/external/restaurant.pdf" 
                         class = "embed"
@@ -252,9 +254,9 @@
                     </a>
                   </div>
                   
-                 <div class = "Progress">
+                 <div class = "progress">
                     <p>If you want to know about how much our staffs has completed their task. </p>
-                     Progress: <progress value = "50" max = "100"></progress>
+                     <p>Progress:</p> : <progress value = "50" max = "100" class = "progress-bar" ></progress>
                 </div>
               
                 </div>
@@ -265,16 +267,15 @@
         <section>
             <div id = "recipe">
               <h1>Different Recipes:</h1>
-             <div class = "recipe">
+              <div class = "recipe">
                 <p>We have included recipe for our special items in written text form in order along with it's video and audio.So, you can always have a chance to learn it if you want to.</p>
-              </div>
+              </div> 
                      <div class="recipe-content"> 
                     
-                  <div class = "title1">
+                  <div class = "recipe-title">
                     <h3>Chicken Momo:</h3>
-                  </div>
-                    
-                    <div class ="ingredients">
+                  </div> 
+                  <div class="ingredients">
                         <h3>Ingredients</h3>
                      <ul>
                       <li>1/2kg minced chicken</li>
@@ -291,7 +292,7 @@
                       <li>1 table spoon chilly powder</li>
                       <li>Mustard oil</li>
                     </ul>
-                   </div>
+                   </div> 
                    <div class ="directions">
                      <h3>Directions</h3>
                   <ol>
@@ -305,13 +306,10 @@
                       <li>The momo is cooked if it isn't sticky.</li>
                   </ol>
                    </div>
-               
-              
-               
-               <div class= "video">
+                    <div class= "video">
                     <p>For further understanding you can check out the video below:</p>
                     <video controls
-                     class = "video1"
+                     class = "video-content"
                     poster="assets/images/Momo.jpg"
                     >
                         <source src = "assets/videos/momo.mp4" type = "video/mp4" />
@@ -319,25 +317,27 @@
                         <p>Your browser doesn't support this video. Here is a <a href="https://www.youtube.com/watch?v=uJlIncioJVI">Here is a youtube link instead.</a></p>
                     </video>
                 </div>
-                <div class ="audio">
+                 <div class ="audio">
                     <p>If you don't like watching videos you can listen to the audio instead:</p>
                     <audio controls
-                         class = "audio1"
+                         class = "audio-content"
                     >
                         <source src = "assets/audios/momo.mp3" type = "audio/mp3" />
                         <p>Your browser doesn't support this audio. Here is a <a href="https://www.youtube.com/watch?v=uJlIncioJVI">Here is a youtube link instead.</a></p>
                     </audio>
                   </div>
-                  
+              
                    
+                    
                    
                   
              
                   <aside class = "aside">
-                    <div class = "aside1">
-                  <p>This is little out of context but just wanted to know your favorite dish.</p>
+                      <div class = "aside-content">
+                     <div class = "dish">
+                  <p>What is your favorite dish?</p>
                   <form>
-                      <input list = "dish">
+                      <input list = "dish" class = "dishes">
                       <datalist id = "dish">
                           <option value = "Pizza">
                           <option value = "Mo:Mo">
@@ -346,50 +346,54 @@
                           <option value = "Chowmein">
                                  
                       </datalist>
-                      <button>Submit</button>
+                     
                   </form>
-                 </div>
+                 </div>  
                 
-                 <div>
+                  <div class = "details-container">
                      <p>Let's see some facts about restaurant. </p>
                      <details open>
                       <summary>Appetizer</summary>
-                      <p>We eat appetizer before a meal</p>
-                      <img src="assets/images/appetizer.jpeg" alt="appetizer" width = "100px" height = "100px">
+                      <div class = "text-section">We eat appetizer before a meal.It is a food that stimulates appetite. </div>
+                      
                       </details>
                       <details>
                       <summary>Beverage</summary>
-                       <p>Beverage is sometimes used with a straw.</p>
-                       <img src="assets/images/beverage.jpeg" alt="beverage" width = "100px" height = "100px">
+                       <div class = "text-section">It is any potable liquid other than water. Beverage is sometimes used with a straw.</div>
+                      
                      </details>
                      <details>
                          <summary>Cashier</summary>
-                         <p>A cashier is a person, who takes your money.</p>
-                         <img src="assets/images/cashier.png" alt="cashier" height = "100px" width = "100px">
+                         <div class = "text-section">A cashier is a person, who takes your money.</div>
+                         
                      </details>
                      <details>
                          <summary>Vegeterian</summary>
-                         <p>A person who does not eat meat or eggs.</p>
-                         <img src="assets/images/vegeterian.jpeg" alt="vegeterian" height = "100px" width = "100px">
+                         <div class = "text-section">A person who does not eat meat or eggs.</div>
+                        
                      </details>
                      <details>
                       <summary>Tray</summary>
-                      <p>A tray is used to put things in it.</p>
-                      <img src="assets/images/tray.jpeg" alt="tray" height = "100px" width = "100px">
+                      <div class = "text-section">Tray is a flat container, usually with slightly raised edges, for carrying food and drinks. A tray is used to put things in it.</div>
+                     
                   </details>
-                 </div>
-                <div>
-              <p>This is also something out of context for our website.But we can also take result out if you want. </p>
+                 </div>  
+                  <div class = "output">
+              <p>We can also take result out if you want. </p>
                  <form oninput="store.value = parseInt(n1.value)+parseInt(n2.value)"> 
-                     <input type="text" name = "n1" placeholder = "number"> +
-                     <input type="text" name = "n2" placeholder = "number"><br>
-                     The Output is:
+                     <input type="text" name = "n1" placeholder = "number" class = "n1-input"> +
+                     <input type="text" name = "n2" placeholder = "number" class = "n2-input"><br>
+                    <p class = "output-result">The Output is:</p> 
                      <output name = "store"></output>
                  </form>
-              </div>
-                </aside>
+              </div>  
+            </aside>
+                
             
                 </div>
+
+               
+               
               </div>
                
         </section>

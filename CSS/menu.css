@@ -7,7 +7,8 @@
     background-size: cover;
     background-attachment: local;
     width: 99vw;
-    height: 110vh;
+    /* height: 110vh; */
+    
 }
 
 .menu-para{
@@ -57,6 +58,8 @@
      min-height: 250px; 
     box-shadow: 0 35px 80px  rgba(0,0,0,0.15);
     transition: 1s;
+    cursor: pointer;
+    
     
 }
 
@@ -116,6 +119,7 @@
     width: 100%;
     transition: 0.5s;
     transform: translateY(150px);
+   
 }
 
 .card:hover .content .details{
@@ -126,7 +130,11 @@
     font-size: 1.25em;
     font-weight: 600;
     color:	#F8F8FF;
-    line-height: 1.2em;
+     line-height: 1.2em; 
+   
+    
+   
+
 
 }
 
